@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Medicine</h1>
+    </header>
+    <section class="container">
+        <div class="container_menu">
+            <div class="find">
+                <h4>Find medicine</h4>
+                    <input id="search-input">
+                    <button class="submit-button" id="submit-button">SUBMIT</button>
+                    <button class="back-button" id="second-back-button">BACK</button>
+            </div>
+            <div class="sort">
+                <button class="sort-button" id="sort-button">SORT MEDICINE BY PRICE</button>
+                <button class="back-button-first" id="back-button">BACK</button>
+            </div>
+            <div class="count">
+                <h4>Count total price of medicine</h4>
+                <button class="count-button" id="count-button">COUNT</button>
+                <h4 class="total-price" id="total-price"></h4>
+            </div>
+        </div>
+        <aside id="aside">
+            <div class="block" id="1-med">
+                <img src="medicine.jpeg" alt="medicine" class="med-photo">
+                <div class="med 1-med-name">ascorbinky :D</div>
+                <div class="med-price">Medicine price in dollars:</div>
+                <div class="med-price" id="1-med-price">5</div>
+            </div>
+            <div class="block" id="2-med">
+                <img src="medicine.jpeg" alt="medicine" class="med-photo">
+                <div class="med 2-med-name">ne ascorbinky :C</div>
+                <div class="med-price">Medicine price in dollars:</div>
+                <div class="med-price" id="2-med-price">8</div>
+            </div>
+            <div class="block" id="3-med">
+                <img src="medicine.jpeg" alt="medicine" class="med-photo">
+                <div class="med 3-med-name">Nurofen</div>
+                <div class="med-price">Medicine price in dollars:</div>
+                <div class="med-price" id="3-med-price">6</div>
+            </div>
+            <div class="block" id="4-med">
+                <img src="medicine.jpeg" alt="medicine" class="med-photo">
+                <div class="med 4-med-name">ibuprofen</div>
+                <div class="med-price">Medicine price in dollars:</div>
+                <div class="med-price" id="4-med-price">3</div>
+            </div>
+            <div class="block" id="5-med">
+                <img src="medicine.jpeg" alt="medicine" class="med-photo">
+                <div class="med 5-med-name">pfizer</div>
+                <div class="med-price">Medicine price in dollars:</div>
+                <div class="med-price" id="5-med-price">999</div>
+            </div>
+
+        </aside>
+    </section>
+    <script type="module" src="js\index.js"></script>
+</body>
+</html>
