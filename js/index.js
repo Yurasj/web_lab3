@@ -26,6 +26,20 @@ const addMedicine = () => {
 }
 addMedicine();
 
+submitButton.addEventListener('click', (event) => {
+    event.preventDefault();
+
+    const foundMedicine = medicine.filter(med => med.medTitle.search(searchInput.value) !== -1);
+    renderMedicine(foundMedicine);
+    totalPrice.innerHTML = '';
+});
+
+secondBackButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    renderMedicine(medicine);
+    searchInput.value = '';
+});
+
 sortButton.addEventListener('click', (event) => {
     event.preventDefault();
     let sortedMedicine = [];
@@ -76,4 +90,5 @@ const renderMedicine = (items) => {
     for (const item of items) {
         insertItem(item, item.id)
     }
+    renderedMedicine = items;
 }
